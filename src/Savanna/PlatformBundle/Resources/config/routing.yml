@@ -1,0 +1,27 @@
+Savanna_platform_home:
+    path:      /{page}
+    defaults:  { _controller: SavannaPlatformBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+    
+Savanna_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: SavannaPlatformBundle:Advert:view }
+    requirements:
+        id: \d+
+    
+Savanna_platform_add:
+    path:      /add
+    defaults:  { _controller: SavannaPlatformBundle:Advert:add }
+
+Savanna_platform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: SavannaPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+Savanna_platform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: SavannaPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+

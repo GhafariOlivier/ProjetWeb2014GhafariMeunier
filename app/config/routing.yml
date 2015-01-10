@@ -1,0 +1,3 @@
+Savanna_platform:
+    resource: "@SavannaPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform

@@ -1,0 +1,4 @@
+services:
+    Savanna_platform.antispam:
+        class: Savanna\PlatformBundle\Antispam\SavannaAntispam
+        arguments: [@mailer, %locale%, 50]
